@@ -24,10 +24,10 @@
   "license": "MIT",
   "scripts": {
     "name": "echo $npm_package_name",
-    "build.tsc": "tsc && bin/copy \"src/**/!(*.ts)\" \"dist\" \"**/node_modules/**\"",
+    "build.tsc": "tsc && bin/copy \"src/**/!(*.ts)\" \"dist\" \"**/node_modules/**\" \"**/.DS_Store\"",
     "clean": "rimraf dist",
     "build.util": "tsc --outDir utils utils/index.ts",
-    "build.test": "tsc -p tsconfig.test.json && bin/copy \"src/**/!(*.ts)\" \"dist.test/src\" \"**/node_modules/**\"",
+    "build.test": "tsc -p tsconfig.test.json && bin/copy \"src/**/!(*.ts)\" \"dist.test/src\" \"**/node_modules/**\" \"**/.DS_Store\"",
     "test": "npm run build.test && ava -v",
     "test.watch": "npm run build.test && ava --watch",
     "clean.test": "rimraf dist.test"
