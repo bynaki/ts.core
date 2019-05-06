@@ -33,10 +33,10 @@
     "clean.test": "rimraf dist.test"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.4.1",
     "fs-extra": "^7.0.1",
     "rimraf": "^2.6.3",
-    "typescript": "^3.3.3"
+    "typescript": "^3.4.5"
   },
   "dependencies": {},
   "ava": {
