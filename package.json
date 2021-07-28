@@ -1,6 +1,6 @@
 {
   "name": "ts.core",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Boilerplate for node.js module dev using typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "url": "https://github.com/bynaki/ts.core.git"
   },
   "engines": {
-    "node": ">= 15.0.0"
+    "node": ">= 16.0.0"
   },
   "keywords": [
     "node",
@@ -24,6 +24,7 @@
   "license": "MIT",
   "scripts": {
     "name": "echo $npm_package_name",
+    "start": "node .",
     "build.tsc": "tsc && bin/copy \"src/**/!(*.ts)\" \"dist\" \"**/node_modules/**\" \"**/.DS_Store\"",
     "clean": "rimraf dist",
     "build.util": "tsc --outDir utils utils/index.ts",

@@ -5,3 +5,6 @@ export class Hello {
     return `Hello, ${this.name}`
   }
 }
+
+const hello = new Hello('World!!')
+console.log(hello.say())
